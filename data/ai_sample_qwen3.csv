@@ -1,0 +1,241 @@
+ID,Text,AI: expected recovery,AI: reason,Valid output,Raw output
+1,Estimated recovery: TBD; Marketed by Sagent Pharmaceuticals,TBD,Not stated,Yes,"{
+  ""expected_recovery"": ""TBD"",
+  ""reason"": ""Not stated""
+}"
+2,On allocation,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+3,"Check wholesalers for inventory; Marketed by Armas Pharmaceuticals, Inc. 908-803-2586",Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+4,Next Delivery: January 2027; Estimated Recovery: March 2027; Shortage per Manufacturer: Manufacturing Delay,March 2:2027,Manufacturing delay,No,"{
+  ""expected_recovery"": ""March 2:2027"",
+  ""reason"": ""Manufacturing delay""
+}"
+5,Additional product will be made available as it is released.,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+6,On backorder. Recovery: mid-November 2026; Check wholesalers for inventory,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+7,Available on allocation,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+8,Additional lots are scheduled for manufacturing to meet demand.  Product will be made available as it is released.,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+9,Estimated recovery: TBD,TBD,Not stated,Yes,"{
+  ""expected_recovery"": ""TBD"",
+  ""reason"": ""Not stated""
+}"
+10,On backorder. Recovery: late-October 2026. Check wholesalers for inventory,October 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""October 2026"",
+  ""reason"": ""Not stated""
+}"
+11,"To place an order, please contact GlobalRX at info@globalrx.com or (919) 245-8418",Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+12,Limited product available. Estimated recovery: October 2026,October 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""October 2026"",
+  ""reason"": ""Not stated""
+}"
+13,Estimated recovery: November 2026,November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+14,Limited Supply Available. Next Delivery and Estimated Recovery: June 2027,June 2027,Not stated,Yes,"{
+  ""expected_recovery"": ""June 2027"",
+  ""reason"": ""Not stated""
+}"
+15,Estimated recovery: end-October to mid-November 2026,November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+16,Estimated recovery: mid-September 2026,September 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""September 2026"",
+  ""reason"": ""Not stated""
+}"
+17,On backorder. Recovery: TBD. Check wholesalers for inventory,TBD,Not stated,Yes,"{
+  ""expected_recovery"": ""TBD"",
+  ""reason"": ""Not stated""
+}"
+18,Next Delivery: January 2027; Estimated Recovery: March 2027,March 2027,Not stated,Yes,"{
+  ""expected_recovery"": ""March 2027"",
+  ""reason"": ""Not stated""
+}"
+19,Distributed by Omnivium Pharmaceuticals LLC (888) 807-9195,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+20,Estimated recovery: April 2027,April 2027,Not stated,Yes,"{
+  ""expected_recovery"": ""April 2027"",
+  ""reason"": ""Not stated""
+}"
+21,Estimated recovery: end October 2026,October 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""October 2026"",
+  ""reason"": ""Not stated""
+}"
+22,Marketed by Sagent Pharmaceuticals,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+23,Limited Supply Available. Next Delivery: October 2026; Estimated Recovery: December 2026; Shortage per Manufacturer: Manufacturing Delay,December 2026,Manufacturing delay,Yes,"{
+  ""expected_recovery"": ""December 2026"",
+  ""reason"": ""Manufacturing delay""
+}"
+24,Additional lots are scheduled to be manufactured.  Product will be made available as it is released.,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+25,Estimated recovery: November 2026; Marketed by Sagent Pharmaceuticals,November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+26,Estimated recovery: January 2027,January 2027,Not stated,Yes,"{
+  ""expected_recovery"": ""January 2027"",
+  ""reason"": ""Not stated""
+}"
+27,Additional lots will be available in the November 2026 timeframe.  Product will be made available as it is released.,November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+28,Please check wholesalers and distributors for inventory.,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+29,Next Delivery: October 2026; Estimated Recovery: December 2026; Shortage per Manufacturer: Manufacturing Delay,December 2026,Manufacturing delay,Yes,"{
+  ""expected_recovery"": ""December 2026"",
+  ""reason"": ""Manufacturing delay""
+}"
+30,"Recovery estimated in late Q4 2026; Distributed by BPI Labs, LLC",December 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""December 2026"",
+  ""reason"": ""Not stated""
+}"
+31,Historical NDC: 0409-1610-50,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+32,Allocation to current contracted customers,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+33,Next Delivery: November 2026; Estimated Recovery: December 2026,December 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""December 2026"",
+  ""reason"": ""Not stated""
+}"
+34,Historical NDC: 0409-1582-29,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+35,Wholesaler & Distributor through Marketing partner (Natco Pharma USA LLC),Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+36,"Distributed by Avenacy, LLC",Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+37,Distributed by DRL,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+38,Selling through remaining short-dated inventory (Dec 2026).,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+39,Estimated recovery: December 2028,December 2028,Not stated,Yes,"{
+  ""expected_recovery"": ""December 2028"",
+  ""reason"": ""Not stated""
+}"
+40,Estimated recovery: TBD; Please check wholesalers for inventory,TBD,Not stated,Yes,"{
+  ""expected_recovery"": ""TBD"",
+  ""reason"": ""Not stated""
+}"
+41,Estimated recovery: late October 2026/November 2026,November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+42,Estimated recovery: mid-November 2026,November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+43,Check wholesalers for inventory; Marketed by Baxter,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+44,"Estimated recovery: November 2026, Product on hand is 8-12 months of dating prior to expiry",November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+45,Not currently manufactured,Not stated,Discontinuation,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Discontinuation""
+}"
+46,Limited Supply Available. Next Delivery: October 2026; Estimated Recovery: December 2026,December 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""December 2026"",
+  ""reason"": ""Not stated""
+}"
+47,"No longer manufactured, some supplies still available in supply chain. Distributed by Woodward Pharma Services LLC (248) 308-1120 Ext 2",Not stated,Discontinuation,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Discontinuation""
+}"
+48,Next Delivery: February 2027; Estimated Recovery: March 2027; Shortage per Manufacturer: Manufacturing Delay,March 2:2027,Manufacturing delay,No,"{
+  ""expected_recovery"": ""March 2:2027"",
+  ""reason"": ""Manufacturing delay""
+}"
+49,Limited Supply Available. Next Delivery: November 2026; Estimated Recovery: December 2026; Shortage per Manufacturer: Manufacturing Delay,December 2026,Manufacturing delay,Yes,"{
+  ""expected_recovery"": ""December 2026"",
+  ""reason"": ""Manufacturing delay""
+}"
+50,Replenishment expected mid to late November 2026,November 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""November 2026"",
+  ""reason"": ""Not stated""
+}"
+51,"No longer manufactured, some supplies still available in supply chain. Distributed by Ritedose Pharmaceuticals, LLC (855) 806 3300",Not stated,Discontinuation,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Discontinuation""
+}"
+52,Estimated availability: November/December 2026,December 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""December 2026"",
+  ""reason"": ""Not stated""
+}"
+53,Product temporarily on backorder. Additional lots will be available in the February 2027 timeframe.,February 2027,Not stated,Yes,"{
+  ""expected_recovery"": ""February 2027"",
+  ""reason"": ""Not stated""
+}"
+54,On backorder. Recovery: late October 2026; Check wholesalers for inventory,October 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""October 2026"",
+  ""reason"": ""Not stated""
+}"
+55,Additional lots will be available in the October 2026 timeframe.  Product will be made available as it is released.,October 2026,Not stated,Yes,"{
+  ""expected_recovery"": ""October 2026"",
+  ""reason"": ""Not stated""
+}"
+56,Limited supply; Check wholesalers for inventory; Marketed by Baxter,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+57,"Distributed by Wilshire Pharmaceuticals, Inc.",Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+58,"Product temporarily unavailable. Estimated recovery: TBD. This product is distributed by ICU Medical. For questions regarding this product, please contact ICU Medical.",TBD,Not stated,Yes,"{
+  ""expected_recovery"": ""TBD"",
+  ""reason"": ""Not stated""
+}"
+59,"Distributed by Slate Run Pharmaceuticals, LLC, 1-844-529-8988",Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
+60,Check wholealers for inventory,Not stated,Not stated,Yes,"{
+  ""expected_recovery"": ""Not stated"",
+  ""reason"": ""Not stated""
+}"
