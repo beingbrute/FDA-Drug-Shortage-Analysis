@@ -1,9 +1,9 @@
 # FDA Drug Shortage Analysis
 
-An analysis of the US FDA drug shortages list in Google Sheets, followed by a check of how accurately a local AI model (Qwen3 4B) extracts recovery dates and shortage reasons from the list's free-text notes.
+An analysis of the US FDA drug shortages list in Google Sheets, a check of how accurately a local AI model (Qwen3 4B) extracts recovery dates and shortage reasons from the list's free-text notes, and a PostgreSQL database built from the same data and kept up to date with a newer download.
 
-**Data:** FDA Drug Shortages list, downloaded 26 October 2026 ([source](https://www.accessdata.fda.gov/scripts/drugshortages/)), public domain. 1,606 records, 1,605 after removing one exact duplicate.
-**Tools:** Google Sheets (QUERY, FILTER, UNIQUE, SPLIT, FLATTEN, COUNTUNIQUEIFS, XLOOKUP, REGEXEXTRACT, pivot table, charts), Python, Ollama with Qwen3 4B.
+**Data:** FDA Drug Shortages list, downloaded 26 October 2026 ([source](https://www.accessdata.fda.gov/scripts/drugshortages/)), public domain. 1,606 records, 1,605 after removing one exact duplicate. A second download on 29 October 2026 was used to refresh the database.
+**Tools:** Google Sheets (QUERY, FILTER, UNIQUE, SPLIT, FLATTEN, COUNTUNIQUEIFS, XLOOKUP, REGEXEXTRACT, pivot table, charts), Python, Ollama with Qwen3 4B, PostgreSQL 18.
 
 ## Headline numbers
 
@@ -67,6 +67,19 @@ All 3 disagreements were AI errors, confirmed by reading the notes:
 
 ![AI check](screenshots/09_ai_check.png)
 
+## PostgreSQL database
+
+The same file was loaded into a normalised PostgreSQL database ([full write-up](database/README.md)):
+
+- **Design:** 6 tables with primary and foreign keys, CHECK rules for status, availability and dates, and a UNIQUE constraint on the natural key (presentation, status, posting date).
+- **Load:** PostgreSQL refused the raw file because of blank lines and 4 unescaped inch marks that Google Sheets had accepted, so a script makes a corrected copy for loading. Cleaning is done in SQL inside one transaction.
+- **Checks:** 23 data-quality checks. All 15 headline totals match the Google Sheet analysis.
+- **Access:** a read-only analyst role that can only use four reporting views, and an admin role, both tested.
+- **Indexing:** EXPLAIN ANALYZE before and after. On a 1,000,000-row generated test table, one query went from about 77 ms to under 1 ms; on the real 1,605 records the gain is a fraction of a millisecond.
+- **Backup:** pg_dump and pg_restore into a new database, verified with row counts and a checksum of every record.
+- **Hypothesis test:** pediatric drugs are not significantly more likely to have a fully unavailable product (Fisher's exact test, p = 0.27).
+- **Refresh:** the 29 October download was applied with an audit trigger logging every change: 39 records updated, 2 deleted, and the database matched the new file exactly afterwards.
+
 ## Data preparation and validation
 
 All cleaning is done with formulas in a separate `clean` tab, so the raw import is never edited. Every check is listed in [validation_log.md](documentation/validation_log.md). The main steps:
@@ -90,6 +103,7 @@ FDA-Drug-Shortage-Analysis/
 ├── FDA_Drug_Shortages_Analysis.xlsx      Google Sheet exported (raw, clean, analysis, dashboard, AI check tabs)
 ├── data/
 │   ├── raw/fda_drug_shortages_2026-10-26.csv
+│   ├── raw/fda_drug_shortages_2026-10-29.csv   newer download, used for the database refresh
 │   ├── ai_sample_rules.csv               60 sampled notes with rule-based labels
 │   └── ai_sample_qwen3.csv               Qwen3 output, including raw responses
 ├── scripts/
@@ -98,7 +112,8 @@ FDA-Drug-Shortage-Analysis/
 │   ├── findings_summary.md
 │   ├── labelling_rules.md
 │   └── validation_log.md
-└── screenshots/
+├── screenshots/
+└── database/                             PostgreSQL version: SQL scripts, Python, write-up (see database/README.md)
 ```
 
 ## Author
