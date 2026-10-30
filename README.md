@@ -1,9 +1,9 @@
 # FDA Drug Shortage Analysis
 
-An analysis of the US FDA drug shortages list in Google Sheets, a check of how accurately a local AI model (Qwen3 4B) extracts recovery dates and shortage reasons from the list's free-text notes, and a PostgreSQL database built from the same data and kept up to date with a newer download.
+An analysis of the US FDA drug shortages list in Google Sheets, a check of how accurately a local AI model (Qwen3 4B) extracts recovery dates and shortage reasons from the list's free-text notes, a PostgreSQL database built from the same data and kept up to date with a newer download, and an oncology brief with an Excel scoring model that adds FDA's NDC Directory.
 
 **Data:** FDA Drug Shortages list, downloaded 26 October 2026 ([source](https://www.accessdata.fda.gov/scripts/drugshortages/)), public domain. 1,606 records, 1,605 after removing one exact duplicate. A second download on 29 October 2026 was used to refresh the database.
-**Tools:** Google Sheets (QUERY, FILTER, UNIQUE, SPLIT, FLATTEN, COUNTUNIQUEIFS, XLOOKUP, REGEXEXTRACT, pivot table, charts), Python, Ollama with Qwen3 4B, PostgreSQL 18.
+**Tools:** Google Sheets (QUERY, FILTER, UNIQUE, SPLIT, FLATTEN, COUNTUNIQUEIFS, XLOOKUP, REGEXEXTRACT, pivot table, charts), Python, Ollama with Qwen3 4B, PostgreSQL 18, Excel.
 
 ## Headline numbers
 
@@ -80,6 +80,15 @@ The same file was loaded into a normalised PostgreSQL database ([full write-up](
 - **Hypothesis test:** pediatric drugs are not significantly more likely to have a fully unavailable product (Fisher's exact test, p = 0.27).
 - **Refresh:** the 29 October download was applied with an audit trigger logging every change: 39 records updated, 2 deleted, and the database matched the new file exactly afterwards.
 
+## Oncology brief
+
+A short consulting-style brief on the 8 oncology drugs in current shortage ([full brief](oncology_brief/README.md)). It combines the shortage list with FDA's NDC Directory (216 marketed products for those drugs) in an Excel scoring model with adjustable weights and two views: patient risk and market entry for a generic manufacturer (fictional client).
+
+- Pentostatin and streptozocin have no generic supplier and rank in the top two under both views. Streptozocin's only marketed product is from a Spanish company, listed as an unapproved drug for use in drug shortage.
+- More suppliers does not mean no shortage: dexamethasone sodium phosphate injection has 19 generic approvals and has still been listed for 7.7 years.
+- Flurazepam, a sleep medicine tagged Oncology on the FDA list, was kept in the data but excluded from scoring.
+- Limits: no sales or volume data, so the model ranks supply signals only.
+
 ## Data preparation and validation
 
 All cleaning is done with formulas in a separate `clean` tab, so the raw import is never edited. Every check is listed in [validation_log.md](documentation/validation_log.md). The main steps:
@@ -113,7 +122,8 @@ FDA-Drug-Shortage-Analysis/
 │   ├── labelling_rules.md
 │   └── validation_log.md
 ├── screenshots/
-└── database/                             PostgreSQL version: SQL scripts, Python, write-up (see database/README.md)
+├── database/                             PostgreSQL version: SQL scripts, Python, write-up (see database/README.md)
+└── oncology_brief/                       oncology brief, Excel scoring model, NDC filter script (see oncology_brief/README.md)
 ```
 
 ## Author
